@@ -149,3 +149,20 @@ main {
   height: 427px;
   border-radius: 15px;
 }
+footer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-part {
+  text-align: center;
+  justify-content: center;
+}
+.footer-logo img {
+  width: 484px;
+  height: 110px;
+}
+.social-icons i {
+  color: #969bab;
+}
