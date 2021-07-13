@@ -68,7 +68,6 @@ header {
   line-height: 75px;
   color: #ffffff;
   font-family: Poppins;
-  /* border: 1px solid white; */
 }
 .banner-text p {
   margin: 0;
@@ -90,8 +89,9 @@ header {
   width: 100%;
   height: 438px;
 }
+/* banner part end */
 
-/**/
+/* main part start */
 main {
   margin-top: 50px;
   display: flex;
@@ -102,6 +102,8 @@ main {
   width: 1050px;
   justify-content: center;
 }
+
+/* player card start*/
 .player-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -125,7 +127,9 @@ main {
   height: 260px;
   border-radius: 10px;
 }
-/**/
+/* player part end */
+
+/* highlights part start*/
 .highlights {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -149,6 +153,9 @@ main {
   height: 427px;
   border-radius: 15px;
 }
+/* highlights part end*/
+
+/* footer part start*/
 footer {
   margin-top: 50px;
   display: flex;
@@ -165,4 +172,6 @@ footer {
 }
 .social-icons i {
   color: #969bab;
+  margin: 0 14px;
 }
+/* footer part end */
