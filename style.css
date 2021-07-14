@@ -8,20 +8,28 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100vh;
+  /* font-family: Poppins;
+  background-color: rgb(207, 207, 250); */
 }
 
 /*header part start*/
 header {
   width: 100%;
-  height: 650px;
-  display: flex;
+  height: 100vh;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
   background-color: rgb(49, 1, 161);
 }
-
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 100px;
+}
 /* menu part start*/
-.menu-part {
+/* .menu-part {
   margin-top: 42px;
   margin-bottom: 10px;
   height: 42px;
@@ -30,13 +38,12 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
+} */
 .menu a {
   text-decoration: none;
   padding: 0 10px;
   color: white;
   font-family: "Bona Nova", serif;
-  font-weight: 400;
 }
 .login a {
   color: white;
@@ -55,11 +62,10 @@ header {
 /* banner part start*/
 .banner {
   margin-top: 30px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 30px;
-  align-items: center;
+  display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .banner-text {
   width: 485px;
@@ -126,6 +132,7 @@ main {
   margin: 8px 0;
   width: 300px;
   height: 260px;
+  object-fit: cover;
   border-radius: 10px;
 }
 /* player part end */
@@ -204,3 +211,114 @@ footer {
   margin: 0 14px;
 }
 /* footer part end */
+
+/**/
+
+@media screen and (max-width: 375px) {
+  body {
+    margin: 0;
+  }
+  * {
+    margin: 0;
+  }
+  header {
+    height: auto;
+  }
+  nav {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    margin-bottom: 10px;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-text {
+    width: 270px;
+    font-size: 30px;
+  }
+  .banner-img {
+    width: 100%;
+  }
+  .banner-img img {
+    width: 300px;
+    height: auto;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .player-cards,
+  .highlights,
+  .latest-videos,
+  .latest-news,
+  .footer-part {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .highlights-img img {
+    width: 340px;
+  }
+  .highlights-text {
+    width: 350px;
+  }
+  .video p {
+    text-align: center;
+  }
+  .news {
+    margin: 5px 10px;
+  }
+  .footer-logo img {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner-text {
+    width: 300px;
+    font-size: 40px;
+  }
+  .banner-img {
+    width: 300px;
+  }
+  .banner-img img {
+    width: 300px;
+    height: auto;
+  }
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .player-cards,
+  .highlights,
+  .latest-videos,
+  .latest-news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .highlights-img img {
+    width: 340px;
+  }
+  .highlights-text {
+    width: 350px;
+  }
+  .video p {
+    text-align: center;
+  }
+  .news {
+    margin: 5px 10px;
+  }
+  .footer-logo img {
+    width: 350px;
+  }
+}
